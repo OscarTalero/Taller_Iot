@@ -4,14 +4,12 @@
 Created on Tue Jun  1 19:23:15 2021
 @author: Oscar Talero
 """
-
 #======================================================================
 #          E S P A C I O    D E    T R A B A J O     A L U M N O
 # ====================================================================
 
 #----------Definición de Funciones (Dividir)------------
 from collections import namedtuple
-
 
 def separar_cadenas(lista_datos):
     """ 
@@ -31,7 +29,6 @@ def separar_cadenas(lista_datos):
        lista_t.append(lista_uno)
        lista_IoT = nombrar_tupla(lista_t)
    return lista_t
-
 
 def nombrar_tupla(lista_t):
     """ 
@@ -54,7 +51,6 @@ def nombrar_tupla(lista_t):
         #creamos una lista que almacena las tuplas
         lista_IoT.append(dispositivo_crear) 
     return lista_IoT  
-    
     
 def calcular_estadisticas(lista_IoT):
     """ 
@@ -96,12 +92,3 @@ def calcular_estadisticas(lista_IoT):
     Tabla_off = (Tabla.format('\n'.join("| {:<10} {:<10} {:>10} |".format(*fila)for fila in tupla_off)))       
     print(Tabla_off)       
     return 'FIN'
-  
-    
-    
-  
-    
-  
-    
-  
-    
